@@ -15,8 +15,7 @@ init: false
 #  - share:rw
 options:
   mqtt: []
-services:
-  mqtt: need
+services: [mqtt: "need"]
 schema:
   mqtt:
     - server: "str?"

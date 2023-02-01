@@ -8,7 +8,7 @@ FROM $BUILD_FROM
     #echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 
 # Upgrade Alpine and base packages
-RUN apk update --no-cache
+#RUN apk update --no-cache
 
 RUN \
     apk add --no-cache \
