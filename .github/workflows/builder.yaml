@@ -98,14 +98,14 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build ${{ matrix.addon }} add-on
-        if: steps.check.outputs.build_arch == 'true'
-        uses: home-assistant/builder@2022.11.0
-        with:
-          args: |
-            ${{ env.BUILD_ARGS }} \
-            --${{ matrix.arch }} \
-            --target /data/${{ matrix.addon }} \
-            --image "${{ steps.check.outputs.image }}" \
-            --docker-hub "ghcr.io/${{ github.repository_owner }}" \
-            --addon
+      # - name: Build ${{ matrix.addon }} add-on
+      #   if: steps.check.outputs.build_arch == 'true'
+      #   uses: home-assistant/builder@2022.11.0
+      #   with:
+      #     args: |
+      #       ${{ env.BUILD_ARGS }} \
+      #       --${{ matrix.arch }} \
+      #       --target /data/${{ matrix.addon }} \
+      #       --image "${{ steps.check.outputs.image }}" \
+      #       --docker-hub "ghcr.io/${{ github.repository_owner }}" \
+      #       --addon
