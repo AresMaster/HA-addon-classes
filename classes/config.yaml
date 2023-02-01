@@ -1,0 +1,32 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Additional Devices Addon
+version: "0.0.1"
+slug: monitoring
+description: Dodatek do obsługi przycisków na zajęcia
+url: "https://github.com/AresMaster/HA-addon-classes"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+#map:
+#  - share:rw
+options:
+  mqtt: []
+services:
+  mqtt: need
+schema:
+  mqtt:
+    - server: "str?"
+    - ca: "str?"
+    - key: "str?"
+    - cert: "str?"
+    - user: "str?"
+    - password: "str?"
+#image: "ghcr.io/home-assistant/{arch}-addon-example"
+devices:
+  - /dev/gpiomem
+  - /dev/mem
+gpio: true
