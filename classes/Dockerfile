@@ -45,4 +45,4 @@ RUN apk del g++ gcc --quiet
 # Copy data for add-on
 COPY main.py /
 RUN chmod a+x /main.py
-CMD ["python", "./main.py"]
+CMD ["python","-u","./main.py"]

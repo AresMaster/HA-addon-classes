@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Additional Devices Addon
-version: "0.0.1a"
+version: "0.0.1b"
 slug: monitoring
 description: Dodatek do obsługi przycisków na zajęcia (REPOSITORY)
 url: "https://github.com/AresMaster/HA-addon-classes"
@@ -11,8 +11,8 @@ arch:
 init: false
 #map:
 #  - share:rw
-options:
-  mqtt: []
+#options:
+#  mqtt: []
 homeassistant_api: true
 privileged:
   - SYS_RAWIO
