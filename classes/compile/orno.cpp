@@ -1,12 +1,12 @@
 #include <wiringPi.h>
-#include <iostream>
-#include <stdio.h>
-#include <sys/time.h>
-#include <time.h>
+// #include <iostream>
+// #include <stdio.h>
+// #include <sys/time.h>
+// #include <time.h>
 #include <stdlib.h>
-#include <sched.h>
-#include <sstream>
-#include <fstream>
+// #include <sched.h>
+// #include <sstream>
+// #include <fstream>
 
 #define PIN 0
 
